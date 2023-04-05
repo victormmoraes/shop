@@ -1,5 +1,36 @@
+import Image from "next/image";
+import { HomeContainer, Product } from "../styles/pages/home";
+
+import camiseta2 from '../assets/camisetas/2.png'
+import camiseta3 from '../assets/camisetas/3.png'
+
+
 export default function Home() {
   return (
-    <h1>Hello World</h1>
+    <HomeContainer>
+      <Product>
+        <Image src={camiseta2} width={520} height={480} alt="" />
+        <footer>
+          <strong>Camiseta X</strong>
+          <span>R$ 79,90</span>
+        </footer>
+      </Product>
+
+      <Product>
+        <Image src={camiseta3} width={520} height={480} alt="" />
+        <footer>
+          <strong>Camiseta X</strong>
+          <span>R$ 79,90</span>
+        </footer>
+      </Product>
+      
+      <Product>
+        <Image src={camiseta2} width={520} height={480} alt="" />
+        <footer>
+          <strong>Camiseta X</strong>
+          <span>R$ 79,90</span>
+        </footer>
+      </Product>
+    </HomeContainer>
   )
 }
